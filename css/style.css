@@ -1,0 +1,21 @@
+body {
+  padding-top: 50px;
+}
+
+.main-section{
+    min-height: 600px;
+}
+
+#login-form{
+    margin-top:100px;
+    padding: 20px 30px;
+}
+
+#login-form h4{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.mb20{
+    margin-bottom: 20px;
+}
