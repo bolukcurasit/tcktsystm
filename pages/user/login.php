@@ -32,7 +32,7 @@
 ?>
 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
     <div class="well" id="login-form">
-        <form action="/?v1=login" method="POST">
+        <form action="/login" method="POST">
             <h2 class="text-center">Destek Sistemi V1.0.0</h2>
             <h4 class="text-center">Sistemi kullanabilmek için lütfen giriş yapınız.</h4>
             <div class="form-group">

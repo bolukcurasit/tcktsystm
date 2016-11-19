@@ -3,7 +3,7 @@ body {
 }
 
 .main-section{
-    min-height: 600px;
+    min-height: 800px;
 }
 
 #login-form{
@@ -18,4 +18,8 @@ body {
 
 .mb20{
     margin-bottom: 20px;
+}
+
+.border-white, .border-white tr, .border-white td, .border-white th{
+    border-color: #fff !important;
 }

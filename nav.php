@@ -13,7 +13,10 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <?php if($_SESSION['user']['type'] == 0){ ?>
-                <li<?php echo $sayfa == 'gelen-talepler' ? ' class="active"' : ''; ?>><a href="/cikis"><i class="fa fa-list"></i> Gelen Talepler <span class="badge">2</span></a></li>
+                    <?php
+                        $num = mysqli_num_rows(mysqli_query($con, "SELECT * FROM tickets WHERE status = 0"));
+                    ?>
+                <li<?php echo $sayfa == 'gelen-talepler' ? ' class="active"' : ''; ?>><a href="/talepler"><i class="fa fa-list"></i> Gelen Talepler <span class="badge"><?php echo $num; ?></span></a></li>
                 <li<?php echo $sayfa == 'kullanicilar' ? ' class="active"' : ''; ?>><a href="/kullanicilar"><i class="fa fa-users"></i> Kullanıcılar</a></li>
                 <?php }else{ ?>
                 <li<?php echo $sayfa == 'taleplerim' ? ' class="active"' : ''; ?>><a href="/taleplerim"><i class="fa fa-list"></i> Taleplerim</a></li>
